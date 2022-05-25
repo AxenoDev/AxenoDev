@@ -4,12 +4,12 @@ Salut ✨, Je suis Axeno, développeur.
 Jeune développeur de 13ans. 🔥
 
 ### Mes langage favori ☕
-  - Java
-  - Python
-  - HTML
-  - CSS
-  - PHP
-  - NodeJS
+  * **Java**
+  * **Python**
+  * **HTML**
+  * **CSS**
+  * **PHP**
+  * **NodeJS**
 
 ### Mes stats sur github 〽️
 
