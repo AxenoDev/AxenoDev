@@ -1,9 +1,9 @@
-<center>
+<div align="center">
 [![SVG Banners](https://svg-banners.vercel.app/api?type=origin&text1=Axeno%20&text2=Créator%20of%20H-Code.fr&width=800&height=400)](h-code.fr)
-</center>
-<center>
+</div>
+<div align="center">
 ### Bonjour tous le monde !
- </center>
+</div>
 Salut ✨, Je suis Axeno, développeur.
 
 Jeune développeur de 13ans. 🔥
