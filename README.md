@@ -1,5 +1,5 @@
 
-[![SVG Banners](https://svg-banners.vercel.app/api?type=origin&text1=Axeno%20&text2=Créator%20of%20H-Code.fr&width=800&height=400)](h-code.fr)
+[![SVG Banners](https://svg-banners.vercel.app/api?type=origin&text1=Axeno%20&text2=Developer&width=800&height=400)](h-code.fr)
 
 
 ### Bonjour tous le monde !
