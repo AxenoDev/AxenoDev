@@ -7,9 +7,9 @@
 
 <p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 
-- 🔭 I’m currently working on **Libnaus Bot**
+- 🔭 I’m currently working on **Libnaus Bot** (A bot discord with dashboard)
 
-- 👯 I’m looking to collaborate on [The Site](https://the-site.fr)
+- 👯 I’m looking to collaborate on [The Site](https://the-site.fr) (A rp minecraft server) 
 
 - 👨‍💻 All of my projects are available at [https://bento.me/axeno](https://bento.me/axeno)
 
