@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Timéo</h1>
-<h3 align="center">Passionate about IT development, I have 15 yo</h3>
+<h3 align="center">Passionate about IT development, I am 15 yo</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=axenodev&label=Profile%20views&color=0e75b6&style=flat" alt="axenodev" /> </p>
 
