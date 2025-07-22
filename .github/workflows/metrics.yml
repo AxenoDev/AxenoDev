@@ -1,0 +1,21 @@
+name: 🛠️ Metrics
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # toutes les 24h
+  workflow_dispatch:
+
+jobs:
+  generate-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: github-metrics.svg
+          template: classic
+          languages: true
+          achievements: true
+          notable: true
+          activity: true
+          base.indepth: false
