@@ -1,21 +1,87 @@
-name: 🛠️ Metrics
+name: 📊 Generate GitHub Metrics
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # toutes les 24h
+    - cron: "0 3 * * *"  # chaque jour à 3h du matin (UTC)
   workflow_dispatch:
 
 jobs:
-  generate-metrics:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Generate GitHub Metrics
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: github-metrics.svg
+
+          # Options pour les plugins
           template: classic
-          languages: true
-          achievements: true
-          notable: true
+
+          # Affiche la timeline de contribution journalière
           activity: true
-          base.indepth: false
+
+          # Affiche les langues principales utilisées dans les repos
+          languages: true
+
+          # Affiche les réalisations GitHub (badges)
+          achievements: true
+
+          # Affiche les repos notables (avec étoiles, forks, etc.)
+          notable: true
+
+          # Affiche les stats de followers, stars, contributions
+          base: true
+
+          # Affiche la liste des organisations dont tu fais partie
+          organizations: true
+
+          # Affiche les info sur les repos épinglés (pinned)
+          pinned: true
+
+          # Active la section de repos populaires
+          popular: true
+
+          # Affiche les stats de followers et following
+          follow: true
+
+          # Liste les langages détaillés
+          languages_full: true
+
+          # Affiche les contributions dans les issues et PR
+          contributions: true
+
+          # Affiche les dernières activités récentes
+          recent_activity: true
+
+          # Affiche les commits par mois
+          commits: true
+
+          # Active la section de stats globales en profondeur
+          base.indepth: true
+
+          # Ajouter un CSS personnalisé
+          extras_css: |
+            svg {
+              filter: drop-shadow(0 0 5px rgba(253,144,97,0.5));
+              border-radius: 15px;
+            }
+            text {
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+          # Ajouter un JS personnalisé (exemple animation)
+          extras_js: |
+            // Simple rotation d'icône sur hover
+            document.querySelectorAll('svg').forEach(svg => {
+              svg.addEventListener('mouseenter', () => {
+                svg.style.transition = 'transform 0.5s ease';
+                svg.style.transform = 'rotate(10deg)';
+              });
+              svg.addEventListener('mouseleave', () => {
+                svg.style.transform = 'rotate(0deg)';
+              });
+            });
